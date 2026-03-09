@@ -1,104 +1,161 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
-import { cartActions } from '../redux-state/CartState'
-import { useDispatch } from 'react-redux'
-import cartgif from "../assets/cartGif.gif";
-import qty from "../assets/qty.png"
-
-import { MdAdd } from "react-icons/md";
-//import { GrFormSubtract } from "react-icons/gr"
-import { RiSubtractFill } from "react-icons/ri"
-import YouMayAlsoLike from './YouMayAlsoLike';
-import SPFooter from './SPFooter';
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { cartActions } from '../redux-state/CartState';
+import Footer from './Footer';
+import './Cart.css';
 
+const Cart = () => {
+  const dispatch = useDispatch();
+  const cartItems = useSelector((state) => state.cart.items);
+  const totalAmount = useSelector((state) => state.cart.totalAmount);
+  const totalQuantity = useSelector((state) => state.cart.totalQuantity);
 
-const Cart = (props) => {
+  const shipping = totalAmount > 100 ? 0 : 9.99;
+  const tax = totalAmount * 0.08;
+  const orderTotal = totalAmount + shipping + tax;
 
-  const { title, quantity, price, id, image, total, cartLength } = props.item;
+  const colorNames = {
+    '#1a1a2e': 'Midnight',
+    '#e94560': 'Crimson',
+    '#f5f5f5': 'White',
+    '#0f3460': 'Navy',
+    '#533483': 'Purple',
+    '#16213e': 'Dark Blue',
+    '#3e2723': 'Brown',
+  };
 
-
-
-  const cartList = useSelector((state) => state.cart.items);
-
-
-
-  const dispacth = useDispatch();
-
-
-  const totalPrice = cartList.map(item => {
-    return item.quantity * item.price;
-  }).reduce((totalPrice, singleItemPrice) => totalPrice + singleItemPrice, 0);
-
-
-
-
-  const removeItemFromCartHandler = () => {
-    dispacth(cartActions.removeItemFromCart(id))
+  if (cartItems.length === 0) {
+    return (
+      <>
+        <section className="cart-empty">
+          <div className="container">
+            <div className="cart-empty-content">
+              <span className="cart-empty-icon">🛒</span>
+              <h2>Your Cart is Empty</h2>
+              <p>Looks like you haven't added any shoes yet. Let's fix that!</p>
+              <Link to="/shop" className="btn btn-primary">Start Shopping</Link>
+            </div>
+          </div>
+        </section>
+        <Footer />
+      </>
+    );
   }
-
-  const addItemToCartHandler = () => {
-    dispacth(
-      cartActions.addItemToCart({
-        id,
-        price,
-        title,
-        image,
-      })
-    )
-  }
-
 
   return (
-    <div >
+    <>
+      <section className="cart-page">
+        <div className="container">
+          <h1 className="cart-title">Shopping Cart ({totalQuantity} items)</h1>
 
+          <div className="cart-layout">
+            {/* Cart Items */}
+            <div className="cart-items">
+              {cartItems.map((item, index) => (
+                <div key={`${item.id}-${item.selectedSize}-${item.selectedColor}-${index}`} className="cart-item glass-card">
+                  <div className="cart-item-image">
+                    <img src={item.picture} alt={item.name} />
+                  </div>
+                  <div className="cart-item-details">
+                    <div className="cart-item-header">
+                      <div>
+                        <span className="cart-item-brand">{item.brand}</span>
+                        <h3 className="cart-item-name">{item.name}</h3>
+                        <div className="cart-item-meta">
+                          {item.selectedSize && <span>Size: US {item.selectedSize}</span>}
+                          {item.selectedColor && <span>Color: {colorNames[item.selectedColor] || item.selectedColor}</span>}
+                        </div>
+                      </div>
+                      <button
+                        className="cart-item-remove"
+                        onClick={() => dispatch(cartActions.removeEntireItem({
+                          id: item.id,
+                          selectedSize: item.selectedSize,
+                          selectedColor: item.selectedColor,
+                        }))}
+                      >
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
+                        </svg>
+                      </button>
+                    </div>
+                    <div className="cart-item-footer">
+                      <div className="cart-item-quantity">
+                        <button
+                          className="qty-btn"
+                          onClick={() => dispatch(cartActions.removeItemFromCart({
+                            id: item.id,
+                            selectedSize: item.selectedSize,
+                            selectedColor: item.selectedColor,
+                          }))}
+                        >−</button>
+                        <span className="qty-value">{item.quantity}</span>
+                        <button
+                          className="qty-btn"
+                          onClick={() => dispatch(cartActions.addItemToCart({
+                            id: item.id,
+                            title: item.name,
+                            price: item.price,
+                            image: item.picture,
+                            brand: item.brand,
+                            selectedSize: item.selectedSize,
+                            selectedColor: item.selectedColor,
+                          }))}
+                        >+</button>
+                      </div>
+                      <span className="cart-item-total">${item.totalPrice.toFixed(2)}</span>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
 
-      {/*<p> items in your cart {cartLength}  </p>*/}
-
-      <div className=' flex cartProductsHold flex-col relative top-44 fof'>
-
-        <div className='cartImaegHold relative flex flex-col w-72'>
-
-          <Link to={`/${id}`}>
-            <img src={image} className=" relative  fof w-44 rounded-lg cartImg" />
-          </Link>
-
-        </div>
-
-        <p className=' font-semibold relative text-xl cartName fof w-56 whitespace-nowrap'> {title} </p>
-        <p className=' relative w-24 cartPrice text-xl'>${price} </p>
-
-        <div className='middleLine relative text-gray-200'>
-          ___________________________________________________________</div>
-
-
-        <div className=' flex bg-black text-white flex-column gap-8 relative qtyhChangehold border bor w-40 hei rounded-md'>
-          <div className=' flex flex-row gap-7'>
-            <RiSubtractFill className=' text-3xl text-white relative cursor-pointer ml-2 mt-2' onClick={removeItemFromCartHandler} />
-            <p className='fof relative text-2xl mt-2'> {quantity} </p>
-            <MdAdd className=' text-3xl relative  cursor-pointer mt-2' onClick={addItemToCartHandler} />
+            {/* Order Summary */}
+            <div className="cart-summary">
+              <div className="cart-summary-card glass-card">
+                <h3 className="cart-summary-title">Order Summary</h3>
+                <div className="cart-summary-row">
+                  <span>Subtotal</span>
+                  <span>${totalAmount.toFixed(2)}</span>
+                </div>
+                <div className="cart-summary-row">
+                  <span>Shipping</span>
+                  <span className={shipping === 0 ? 'free-shipping' : ''}>
+                    {shipping === 0 ? 'FREE' : `$${shipping.toFixed(2)}`}
+                  </span>
+                </div>
+                <div className="cart-summary-row">
+                  <span>Tax (8%)</span>
+                  <span>${tax.toFixed(2)}</span>
+                </div>
+                <div className="cart-summary-divider"></div>
+                <div className="cart-summary-row total">
+                  <span>Total</span>
+                  <span>${orderTotal.toFixed(2)}</span>
+                </div>
+                {shipping === 0 && (
+                  <div className="cart-free-shipping-note">
+                    🎉 You qualify for free shipping!
+                  </div>
+                )}
+                <button className="btn btn-primary cart-checkout-btn">
+                  Proceed to Checkout
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+                <Link to="/shop" className="cart-continue-link">
+                  ← Continue Shopping
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
+      <Footer />
+    </>
+  );
+};
 
-
-      </div>
-
-      <div className='topLine absolute text-gray-200'>
-        ______________________________________________________________________________
-      </div>
-
-
-
-
-
-
-
-
-    </div>
-
-
-  )
-}
-
-export default Cart
-
+export default Cart;

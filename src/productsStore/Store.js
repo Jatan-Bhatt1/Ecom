@@ -1,597 +1,745 @@
-
-
 export const store = [
-    // best sellers 4
-    {
-        id: "1",
-        name: "Facial Cleanser",
-        price: 9,
-        type: "bestSeller",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Foaming_Facial_Cleanser_125ml_01_Product_540x.jpg?v=1599504600",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Foaming_Facial_Cleanser_125ml_OH_01_1_540x.jpg?v=1599504601",
-
-    },
-
-    {
-        id: "2",
-        name: "Facial Moisturiser",
-        price: 9,
-        type: "bestSeller",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Facial_Moisturiser_125ml_01_Product_540x.jpg?v=1599504612",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Facial-Moisturiser_01_540x.jpg?v=1599504612",
-
-    },
-
-    {
-        id: "3",
-        name: "Mist Toner",
-        price: 9,
-        type: "bestSeller",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Hydrating_Mist_Toner_125ml_01_Product_540x.jpg?v=1599504641",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Hydrating_Mist_Toner_125ml_OH_01_540x.jpg?v=1599504641",
-
-    },
-
-    {
-        id: "4",
-        name: "Face Mask",
-        price: 9,
-        type: "bestSeller",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Sukin_Super_Greens_Detoxifying_Facial_Masque_540x.jpg?v=1599504639",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Detoxifying-Clay-Masque_01_540x.jpg?v=1599504639",
-
-    },
-
-    // for navBar ka gift type
-
-    {
-        id: "6",
-        name: "ROSE GOLD PACK",
-        price: 12,
-        type: "gift",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Rose_Gift_Pack_Front_360x.jpg?v=1602265134",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Rose_Gift_Pack_Angle_360x.jpg?v=1602265134",
-
-    },
-
-    {
-        id: "7",
-        name: "HAND CREAM TRIO PACK",
-        price: 10,
-        type: "gift",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Hand_Cream_Trio_Gift_Pack_Front_360x.jpg?v=1602265134",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Hand_Cream_Trio_Gift_Pack_Angle_360x.jpg?v=1602265134",
-
-    },
-
-    {
-        id: "8",
-        name: "THE LAVENDER PACK",
-        price: 15,
-        type: "gift",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/TheLavenderPack1000x1000_360x.jpg?v=1604413498",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/9327693009396_-TheLavenderPack_360x.jpg?v=1602265136",
-
-    },
-
-    // for NAv bar ka SHOP RANGE "body type"
-
-    {
-        id: "9",
-        name: "COFFEE BODY SCRUB",
-        price: 11,
-        type: "navbar-BodyType",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Masterbrand_Coffee___Coconut_Energising_Body_Scrub_200ml_01_Product_540x.jpg?v=1599504583",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Masterbrand_Coffee___Coconut_Energising_Body_Scrub_200ml_OH_01_540x.jpg?v=1599504583",
-
-    },
-
-    {
-        id: "10",
-        name: "COCONUT BODY WASH",
-        price: 18,
-        type: "navbar-BodyType",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Botanical_Body_Wash_1L_01_Product_540x.jpg?v=1599504644",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/AloeVera-styled-shot_c2cadf15-cec0-4788-8cb5-10c22e5ccfd7_540x.jpg?v=1599504644",
-
-    },
-
-
-    {
-        id: "11",
-        name: "COCONUT BODY WASH",
-        price: 21,
-        type: "navbar-BodyType",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Hydrating_Body_Lotion_500mL_01_Product_540x.jpg?v=1599504585",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/NO_Lists_for_Site-SIG_fd44fcf9-5f2e-4a03-9deb-06e175447fd7_540x.png?v=1599504585",
-
-    },
-
-    // for NAv bar ka SHOP RANGE "travel type"
-
-    {
-        id: "12",
-        name: "FOAMING FACE WASH",
-        price: 56,
-        type: "navbar-TravelType",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Foaming_Facial_Cleanser_50mL_Tube_WEB.jpg?v=1599504567",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/IMG_8764_360x.jpg?v=1602265059",
-
-    },
-
-    {
-        id: "13",
-        name: "HYDRATING MIST TONER",
-        price: 28,
-        type: "navbar-TravelType",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Hydrating_Mist_Toner_50mL_WEB_540x.jpg?v=1599504599",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/239024Sukin-SocialContentShoot_321_360x.jpg?v=1599504599",
-
-    },
-
-    {
-        id: "14",
-        name: "REVITAL FACE WASH",
-        price: 22,
-        type: "navbar-TravelType",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Revitalising_Facial_Scrub_50mL_Tube_WEB_540x.jpg?v=1599504603",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/239024Sukin-SocialContentShoot_341_1_360x.jpg?v=1602265081",
-
-    },
-
-
-    {
-        id: "15",
-        name: "UBTABN FACEWASH",
-        price: 44,
-        type: "navbar-TravelType",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Natural_Balance_Shampoo_50mL_Tube_Grey_BG_FOR_WEB_540x.jpg?v=1599504616",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/239024Sukin-SocialContentShoot_341_360x.jpg?v=1599504616",
-
-    },
-
-    // for navbar ka new type ke liye 
-
-    {
-        id: "16",
-        name: "ROSE WATER",
-        price: 52,
-        type: "navbar-NewType",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Masterbrand_Rose_Mist_Toner_125ml_01_Product_540x.jpg?v=1599504649",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Masterbrand_Rose_Mist_Toner_125ml_Green_Tea_Mist_Toner_125ml_01_540x.jpg?v=1599504649",
-
-    },
-
-
-    {
-        id: "17",
-        name: " COFFEE FACE MASK",
-        price: 47,
-        type: "navbar-NewType",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Sukin_Coffee_Coconut_Exfoliating_Masque_540x.jpg?v=1599504663",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Masterbrand_Coffee___Coconut_Exfoliating_Facial_Masque_100ml_OH_01_540x.jpg?v=1599504663",
-
-    },
-
-
-    {
-        id: "18",
-        name: "MIST TONER",
-        price: 21,
-        type: "navbar-NewType",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Sukin_Rosehip_Oil-25ml-Product_540x.jpg?v=1599504623",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/NO_Lists_for_Site-RH_62038fc0-558f-45e6-b0cd-061fba08bfd8_540x.png?v=1599504623",
-
-    },
-
-    // actual products "BEST SELLER PRODUCTS" type "ourBestSellers"
-
-    {
-        id: "19",
-        name: "MIST TONER",
-        price: 21,
-        type: "ourBestSellers",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Hydrating_Mist_Toner_125ml_01_Product_540x.jpg?v=1599504641",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Hydrating_Mist_Toner_125ml_OH_01_360x.jpg?v=1599504641",
-
-    },
-
-
-    {
-        id: "20",
-        name: "ROSE GOLD FACIAL",
-        price: 61,
-        type: "ourBestSellers",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Masterbrand_Rose_Mist_Toner_125ml_01_Product_540x.jpg?v=1599504649",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Masterbrand_Rose_Mist_Toner_125ml_Green_Tea_Mist_Toner_125ml_01_360x.jpg?v=1599504649",
-
-    },
-
-    {
-        id: "21",
-        name: "FOAMING ROSE FACIAL",
-        price: 45,
-        type: "ourBestSellers",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Facial_Moisturiser_125ml_01_Product_540x.jpg?v=1599504612",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Facial-Moisturiser_01_540x.jpg?v=1599504612",
-
-    },
-
-    {
-        id: "22",
-        name: "REVITAL FACE WASH",
-        price: 84,
-        type: "ourBestSellers",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Micellar_Cleansing_Water_250ml_01_Product_540x.jpg?v=1599504588",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Micellar_Cleansing_Water_250ml_OH_01_540x.jpg?v=1599504588",
-
-    },
-
-    {
-        id: "23",
-        name: "EXFOLIATING MASK",
-        price: 25,
-        type: "ourBestSellers",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Cream_Cleanser_125ml_01_Product_540x.jpg?v=1599504664",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Cream_Cleanser_125ml_OH_01_540x.jpg?v=1599504664",
-
-    },
-
-    {
-        id: "24",
-        name: "APPLE CIDER CREAM",
-        price: 45,
-        type: "ourBestSellers",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Revitalising_Facial_Scrub_125ml_01_Product_540x.jpg?v=1599504656",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Hydrating_Facial_Masque_Revitalising_Facial_Scrub_125ml_OH_01_540x.jpg?v=1599504656",
-
-    },
-
-    {
-        id: "25",
-        name: "AVACODA CREAM",
-        price: 157,
-        type: "ourBestSellers",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Hydrating_Facial_Masque_01_Product_2_540x.jpg?v=1599504579",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Hydrating_Facial_Masque_OH_01_540x.jpg?v=1599504579",
-
-    },
-
-
-    {
-        id: "26",
-        name: "UBTAN FACEWASH",
-        price: 24,
-        type: "ourBestSellers",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Antioxident_Eye_Serum_01_Product_540x.jpg?v=1599504580",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Antioxidant_Eye_Cream_30ml_01_540x.jpg?v=1599504580",
-
-    },
-
-    {
-        id: "27",
-        name: "ANTIOXIDANT FACEMASK",
-        price: 75,
-        type: "ourBestSellers",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Sukin-Paw-Paw_540x.jpg?v=1599504587",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/sukin_pawpaw_540x.jpg?v=1599504587",
-
-    },
-
-    {
-        id: "28",
-        name: "COFFEE BODY WASH",
-        price: 78,
-        type: "ourBestSellers",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Moisture_Restoring_Night_Cream_120ml_01_Product_2_540x.jpg?v=1599504662",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Moisture_Restoring_Night_Cream_120ml_01_540x.jpg?v=1599504662",
-
-    },
-
-    {
-        id: "29",
-        name: "STRAWBERRY MOISTURISER",
-        price: 57,
-        type: "ourBestSellers",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Purifying_Facial_Masque_01_Product_2_540x.jpg?v=1599504582",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Hydrating_Facial_Masque_OH_01_540x.jpg?v=1599504579",
-
-    },
-
-    {
-        id: "30",
-        name: "BLUEBERRY MOISTURISER",
-        price: 88,
-        type: "ourBestSellers",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Hydrating_Body_Lotion_500ml_02_540x.jpg?v=1599504645",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Hydrating-Body-Lotion_02_540x.jpg?v=1599504645",
-
-    },
-
-    // for ig carosuel  type "IGPOSTS"
-
-    {
-        id: "31",
-
-        type: "iGPosts",
-        primaryImage: "https://scontent-lcy1-1.cdninstagram.com/v/t51.29350-15/313962865_130486163124825_3872437440492064747_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=-lmG2O4dOucAX8QcJ5M&_nc_ht=scontent-lcy1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfAHT7pOcFYxRAnf56OnXFtLSyR7WayrzECFZkdsW9r_Rw&oe=63731B07",
-
-    },
-
-    {
-        id: "32",
-        type: "iGPosts",
-        primaryImage: "https://scontent-lcy1-1.cdninstagram.com/v/t51.29350-15/314474189_3459125960988849_5301653039305226582_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=Py6h3bGoC_MAX-Iews1&_nc_ht=scontent-lcy1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfCRfHYUT_SCZWQYEKljTugVmBowTNDFYavEXU44ET63yg&oe=6372D043",
-
-    },
-
-    {
-        id: "33",
-        type: "iGPosts",
-        primaryImage: "https://scontent-lcy1-1.cdninstagram.com/v/t51.29350-15/314478179_427847786212552_2166145489506263286_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=2EMtwONXdlgAX-YTXAC&_nc_ht=scontent-lcy1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfCNZD2XX5ypy58-6eUsbaHb2adjwe2LT6_UhoyCDB-JEQ&oe=637318F2",
-
-    },
-
-    {
-        id: "34",
-        type: "iGPosts",
-        primaryImage: "[https://scontent-lcy1-1.cdninstagram.com/v/t51.29350-15/313518379_188429183711300_8151278366243215086_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=HQxZfX3zuaQAX_zfcBH&_nc_ht=scontent-lcy1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfC-0dxgjeZAMW4j5Und2ZipxnBPJgAAw0eIHPY1NTH3vA&oe=6373ECA3](https://scontent-lcy1-1.cdninstagram.com/v/t51.29350-15/313518379_188429183711300_8151278366243215086_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=HQxZfX3zuaQAX_zfcBH&_nc_ht=scontent-lcy1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfC-0dxgjeZAMW4j5Und2ZipxnBPJgAAw0eIHPY1NTH3vA&oe=6373ECA3)",
-
-    },
-
-
-    {
-        id: "35",
-        type: "iGPosts",
-        primaryImage: "https://scontent-lcy1-1.cdninstagram.com/v/t51.29350-15/313904838_644828754033309_8190401506066273847_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=5vGwQp3agyYAX9GzdN9&_nc_ht=scontent-lcy1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfCpWTRt3wjB65-i_cMABs2uurxkJxlaDO-j0ZAPoeR3lw&oe=63723C04",
-
-    },
-
-
-    {
-        id: "36",
-        type: "iGPosts",
-        primaryImage: "https://scontent-lcy1-1.cdninstagram.com/v/t51.29350-15/313842695_842398890281843_8923876477054992822_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=FKdEGPiWctQAX9PD1Tt&_nc_ht=scontent-lcy1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfD5A7KTnVB45p6M9Xl9zQSm15B1vnoU6JASPBgW62G_JA&oe=6373D0C0",
-
-    },
-
-    {
-        id: "37",
-        type: "iGPosts",
-        primaryImage: "https://scontent-lcy1-1.cdninstagram.com/v/t51.29350-15/313360482_421805233489433_2180398075982936387_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=TC_YP3KsBKgAX_UWuiL&_nc_ht=scontent-lcy1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfDL0rgDBFQc5kpLJiasFCbpam_yHNOF1Eqr6tkjJyjW0w&oe=6372D9EE",
-
-    },
-
-    {
-        id: "38",
-        type: "iGPosts",
-        primaryImage: "[https://scontent-lcy1-1.cdninstagram.com/v/t51.29350-15/312923519_415357727475132_3000659168966820929_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=MSPAwUxDLT0AX_q9fA5&_nc_ht=scontent-lcy1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfDkzxVRC1ejkowXInjU7aaYjuS6iDBJV372Q0p9R1Amkg&oe=63738D15](https://scontent-lcy1-1.cdninstagram.com/v/t51.29350-15/312923519_415357727475132_3000659168966820929_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=MSPAwUxDLT0AX_q9fA5&_nc_ht=scontent-lcy1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfDkzxVRC1ejkowXInjU7aaYjuS6iDBJV372Q0p9R1Amkg&oe=63738D15)",
-
-    },
-
-    {
-        id: "39",
-        type: "iGPosts",
-        primaryImage: "[https://scontent-lcy1-1.cdninstagram.com/v/t51.29350-15/314538850_842391733849053_5837409325218948914_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=yl2x9QL1CI0AX_3K42M&_nc_ht=scontent-lcy1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfDtUpG3NMqPdhdjhPSsqtXIWhp63oIPCOXxHQUmp1Ro8A&oe=6373247D](https://scontent-lcy1-1.cdninstagram.com/v/t51.29350-15/314538850_842391733849053_5837409325218948914_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=yl2x9QL1CI0AX_3K42M&_nc_ht=scontent-lcy1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfDtUpG3NMqPdhdjhPSsqtXIWhp63oIPCOXxHQUmp1Ro8A&oe=6373247D)",
-
-    },
-
-    {
-        id: "40",
-        type: "iGPosts",
-        primaryImage: "https://scontent-lcy1-1.cdninstagram.com/v/t51.29350-15/313918031_164815222899324_5118105442635469994_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=75C5M_xl7W4AX9aXcJZ&_nc_ht=scontent-lcy1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfBPLXtxavxi0qLvoBLwTHOcTh_WqHuC3dhATNZ7FhFVyw&oe=6372D076",
-
-    },
-
-    {
-        id: "41",
-        type: "iGPosts",
-        primaryImage: "[https://scontent-lcy1-1.cdninstagram.com/v/t51.29350-15/313518379_188429183711300_8151278366243215086_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=HQxZfX3zuaQAX_zfcBH&_nc_ht=scontent-lcy1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfC-0dxgjeZAMW4j5Und2ZipxnBPJgAAw0eIHPY1NTH3vA&oe=6373ECA3](https://scontent-lcy1-1.cdninstagram.com/v/t51.29350-15/313518379_188429183711300_8151278366243215086_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=HQxZfX3zuaQAX_zfcBH&_nc_ht=scontent-lcy1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfC-0dxgjeZAMW4j5Und2ZipxnBPJgAAw0eIHPY1NTH3vA&oe=6373ECA3)",
-
-    },
-
-    {
-        id: "42",
-        type: "iGPosts",
-        primaryImage: "https://scontent-lcy1-1.cdninstagram.com/v/t51.29350-15/313859159_1178762139722510_2208267463138928303_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=fDD-DllQ_fgAX_gepIB&_nc_ht=scontent-lcy1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfA22pcsJqnauAqOBE2egFF1VhPe-wEPMDIQMOxhw2zCMw&oe=63741165",
-
-    },
-
-
-    // FOR UNDER 20 PAGE
-
-
-
-    // body wash
-    {
-        id: "43",
-        name: "NATURAL LEMON BODY WASH",
-        price: 18,
-        type: "bodywash all",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/NB_ScalpScrub200mlTube_200mL_02_large.jpg?v=1654006879",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/NO_Lists_for_Site-SIG_3ec6e6c0-aee5-483d-a6c9-e4abab736fd7_large.png?v=1654006879",
-        stars: 4,
-        descr: "Our lightweight Leave-In Conditioner hydrates, gently detangles and tames frizz leaving hair smooth and manageable.            "
-
-    },
-
-    {
-        id: "44",
-        name: "NATURAL STRAWBERRY BODY WASH",
-        price: 15,
-        type: "bodywash all",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/NB_Leave-InConditioner_250ml_02_large.jpg?v=1654006878",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/NaturalBalance_7be6d9d2-0387-44f2-9949-b03a344fc044_large.jpg?v=1654006878",
-        stars: 5,
-        descr: "Our Scalp Scrub removes product build up and impurities with a refreshing blend of Peppermint & Ginger Extract.        "
-
-    },
-
-    {
-        id: "53",
-        name: "NATURAL UBTAN BODY WASH",
-        price: 15,
-        type: "bodywash all",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/ROW_PAMicroExfoliatingCleanser125mL_1500px_large.jpg?v=1618352423",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/ROW_PAMicroExfoliatingCleanser125mL_1500px_large.jpg?v=1618352423",
-        stars: 5,
-        descr: "Hydrate and protect dry hands while caring for nails and cuticles through Soy Protein, Aloe Vera & Vitamin E"
-
-    },
-
-
-
-
-
-    {
-        id: "54",
-        name: "NATURAL NEEM BODY WASH",
-        price: 11,
-        type: "bodywash all",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Colour_Care_Lustre_Masque_200mL_02_For_Web_large.jpg?v=1616509409",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/ColourCare2_large.jpg?v=1616509409",
-        stars: 5,
-        descr: "Seriously hydrate the delicate under eye area with our fragrance-free water gel.            "
-
-    },
-
-
-    // body loption
-    {
-        id: "46",
-        name: "NATURAL BLUEBERRY BODY LOTION",
-        price: 15,
-        type: "bodyLotion all",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/CreamyBodyWash500ml_large.jpg?v=1649168513",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/CreamyBodyFinal_large.jpg?v=1649168513",
-        stars: 5,
-        descr: "Deliver an instant boost of moisture to skin with our ultra-hydrating gel cream."
-    },
-
-    {
-        id: "47",
-        name: "NATURAL KIWI BODY LOTION",
-        price: 19,
-        type: "bodyLotion all",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Biomarine_Facial_Serum_02_FOR_WEB_large.jpg?v=1646144556",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/MicrosoftTeams-image_5_-SMALL_large.jpg?v=1646144556",
-        stars: 5,
-        descr: "Our glow-promoting cleanser gently exfoliates to remove dead skin cells, excess sebum & make-up."
-    },
-
-    {
-        id: "48",
-        name: "NATURAL AVACODA BODY LOTION",
-        price: 14,
-        type: "bodyLotion all",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Hydra_Eye_Gel_15ml_Tube_02_FOR_WEB_large.jpg?v=1646144555",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/MicrosoftTeams-image_5_-SMALL_533a775e-6e81-48de-bafa-6250300a0219_large.jpg?v=1646144555",
-        stars: 5,
-        descr: "Our glow-promoting exfoliator is formulated with Kakadu plum, a natural source of Vitamin C, and Bromelain, a natural fruit...            "
-
-    },
-
-
-    {
-        id: "55",
-        name: "NATURAL LITCHI BODY LOTION",
-        price: 16,
-        type: "bodyLotion all",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/ROW_SPFSheerTouchFacialSunscreen-Light-MediumTubeFRONT02_1000_large.jpg?v=1614090206",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/SukinSPF30UCG_d249fc5d-2cd5-4be7-afbd-8f11d545261f_large.jpg?v=1614090207",
-        stars: 5,
-        descr: "Kakadu Plum, a natural source of Vitamin C, Vitamin E and Australian bioactive complex rich in antioxidants brighten and...            "
-
-    },
-
-    {
-        id: "56",
-        name: "NATURAL TEATREE BODY LOTION",
-        price: 18,
-        type: "bodyLotion all",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/ROW_SPFSheerTouchFacialSunscreen-UntintedTubeFRONT02_1000px_large.jpg?v=1614090205",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/SukinSPF30UCG_large.jpg?v=1614090205",
-        stars: 5,
-        descr: "Our Scalp Scrub removes product build up and impurities with a refreshing blend of Peppermint & Ginger Extract.        "
-
-    },
-
-    {
-        id: "57",
-        name: "NATURAL TEATREE BODY LOTION",
-        price: 18,
-        type: "bodyLotion all",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Sukin_Rosehip_Facial_Masque_large.jpg?v=1599504675",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/STYLED_ROSE_FACIAL_MASQUE_large.jpg?v=1599504675",
-        stars: 5,
-        descr: "Our soap-free Bergamot & Patchouli Body Wash delights and stimulates the senses while leaving skin clean and fresh.            "
-
-    },
-
-    //// bodyScrub
-
-    {
-        id: "49",
-        name: "EXFOLIATING JELLY SCRUB",
-        price: 19,
-        type: "bodyScrub all",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Brightening_JellyExfoliator125ml_02_large.jpg?v=1629210220",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/NO_Lists_for_Site_BRIGHTENING_451cbd3f-1e8b-446a-a45e-61cc31826f69_large.jpg?v=1629210220",
-        stars: 5,
-        descr: "Our cleanser helps exfoliate dead skin cells & cleanses away impurities to promote a more even complexion.            "
-
-    },
-
-    {
-        id: "50",
-        name: "EXFOLIATING APPPLE SCRUB",
-        price: 9,
-        type: "bodyScrub all",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Brightening_IlluminatingMoisturiser60ml_02_large.jpg?v=1629210218",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/NO_Lists_for_Site_BRIGHTENING_cf1ff5a7-5a32-4bb0-a7ce-be69ccc9fcf0_large.jpg?v=1629210219",
-        stars: 5,
-        descr: " Our Color Luster Mask restores natural shine and radiance to color treated hair with Kakadu Plum & Birch Extracts.            "
-
-    },
-
-    {
-        id: "51",
-        name: "EXFOLIATING KIWI SCRUB",
-        price: 16,
-        type: "bodyScrub all",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Bergamot_PachouliBodyWash500mL1000x1000x144_large.jpg?v=1637072534",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Bergamot_PachouliBodyWashpumpLifestyle1000x1000x144_large.jpg?v=1637072534",
-        stars: 5,
-        descr: "Our Scalp Scrub removes product build up and impurities with a refreshing blend of Peppermint & Ginger Extract.        "
-
-    },
-
-    {
-        id: "58",
-        name: "EXFOLIATING NEEM SCRUB",
-        price: 16,
-        type: "bodyScrub all",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Hydrating_Treatment_Oil_50mL_Bottle_01_2_large.jpg?v=1599504672",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Hydrating_Hair_Oil_large.jpg?v=1599504672",
-        stars: 5,
-        descr: "Our natural, sheer touch tinted sunscreen for light to medium skin tones has been designed with daily use in...            "
-
-    },
-
-    {
-        id: "59",
-        name: "EXFOLIATING COCOA SCRUB",
-        price: 16,
-        type: "bodyScrub all",
-        primaryImage: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Sukin_Coffee_Coconut_Exfoliating_Masque_large.jpg?v=1599504663",
-        hoverImg: "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Masterbrand_Coffee___Coconut_Exfoliating_Facial_Masque_100ml_OH_01_large.jpg?v=1599504663",
-        stars: 5,
-        descr: "Our 100% naturally derived, sheer touch facial sunscreen has been designed with daily use in mind, and heroes natural...            "
-
-    },
-
-
-
-
-
-]
+  // ==================== RUNNING SHOES ====================
+  {
+    id: "1",
+    name: "Air Velocity Pro",
+    brand: "Nike",
+    price: 179,
+    originalPrice: 220,
+    category: "running",
+    type: "bestSeller",
+    sizes: [7, 8, 9, 10, 11, 12],
+    colors: ["#1a1a2e", "#e94560", "#f5f5f5"],
+    primaryImage: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=600&q=80",
+    rating: 4.8,
+    reviews: 342,
+    description: "Engineered with responsive cushioning and a breathable mesh upper for unmatched speed and comfort on every run.",
+    isNew: false,
+    isBestSeller: true,
+  },
+  {
+    id: "2",
+    name: "UltraBoost Infinity",
+    brand: "Adidas",
+    price: 199,
+    originalPrice: 250,
+    category: "running",
+    type: "bestSeller",
+    sizes: [7, 8, 9, 10, 11],
+    colors: ["#0f3460", "#e94560", "#16213e"],
+    primaryImage: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1605348532760-6753d2c43329?w=600&q=80",
+    rating: 4.9,
+    reviews: 518,
+    description: "Premium Boost midsole technology delivers incredible energy return, making every step feel effortless.",
+    isNew: true,
+    isBestSeller: true,
+  },
+  {
+    id: "3",
+    name: "Fresh Foam X 1080",
+    brand: "New Balance",
+    price: 159,
+    originalPrice: 185,
+    category: "running",
+    type: "newArrival",
+    sizes: [7, 8, 9, 10, 11, 12, 13],
+    colors: ["#533483", "#e94560", "#f5f5f5"],
+    primaryImage: "https://images.unsplash.com/photo-1539185441755-769473a23570?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=600&q=80",
+    rating: 4.7,
+    reviews: 267,
+    description: "Plush Fresh Foam X midsole with strategic laser-cut zones for a premium ride that doesn't quit.",
+    isNew: true,
+    isBestSeller: false,
+  },
+  {
+    id: "4",
+    name: "Gel-Kayano 30",
+    brand: "Asics",
+    price: 169,
+    originalPrice: 200,
+    category: "running",
+    type: "bestSeller",
+    sizes: [8, 9, 10, 11, 12],
+    colors: ["#0f3460", "#e94560", "#1a1a2e"],
+    primaryImage: "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=600&q=80",
+    rating: 4.6,
+    reviews: 189,
+    description: "PureGEL technology and FF BLAST PLUS cushioning for the ultimate stability runner.",
+    isNew: false,
+    isBestSeller: true,
+  },
+  {
+    id: "5",
+    name: "Pegasus Trail 4",
+    brand: "Nike",
+    price: 145,
+    originalPrice: 175,
+    category: "running",
+    type: "featured",
+    sizes: [7, 8, 9, 10, 11],
+    colors: ["#16213e", "#e94560", "#533483"],
+    primaryImage: "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1584735175315-9d5df23860e6?w=600&q=80",
+    rating: 4.5,
+    reviews: 156,
+    description: "Trail-ready traction meets road-smooth transitions. Built for runners who don't stop at pavement.",
+    isNew: false,
+    isBestSeller: false,
+  },
+  {
+    id: "6",
+    name: "Cloud Surfer 7",
+    brand: "On",
+    price: 169,
+    originalPrice: 210,
+    category: "running",
+    type: "newArrival",
+    sizes: [7, 8, 9, 10, 11, 12],
+    colors: ["#1a1a2e", "#0f3460", "#f5f5f5"],
+    primaryImage: "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1606890658317-7d14490b76fd?w=600&q=80",
+    rating: 4.7,
+    reviews: 203,
+    description: "CloudTec Phase technology adapts to your stride, offering a smooth heel-to-toe transition with every step.",
+    isNew: true,
+    isBestSeller: false,
+  },
+
+  // ==================== CASUAL / LIFESTYLE ====================
+  {
+    id: "7",
+    name: "Air Force 1 '07",
+    brand: "Nike",
+    price: 119,
+    originalPrice: 130,
+    category: "casual",
+    type: "bestSeller",
+    sizes: [7, 8, 9, 10, 11, 12],
+    colors: ["#f5f5f5", "#1a1a2e", "#e94560"],
+    primaryImage: "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?w=600&q=80",
+    rating: 4.9,
+    reviews: 1024,
+    description: "The legend lives on. Iconic style meets Air cushioning for all-day comfort that never goes out of fashion.",
+    isNew: false,
+    isBestSeller: true,
+  },
+  {
+    id: "8",
+    name: "Stan Smith Luxe",
+    brand: "Adidas",
+    price: 99,
+    originalPrice: 120,
+    category: "casual",
+    type: "featured",
+    sizes: [7, 8, 9, 10, 11],
+    colors: ["#f5f5f5", "#16213e", "#533483"],
+    primaryImage: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=600&q=80",
+    rating: 4.6,
+    reviews: 678,
+    description: "Clean lines meet sustainably sourced materials in this elevated take on the timeless classic.",
+    isNew: false,
+    isBestSeller: false,
+  },
+  {
+    id: "9",
+    name: "Old Skool Premium",
+    brand: "Vans",
+    price: 89,
+    originalPrice: 110,
+    category: "casual",
+    type: "featured",
+    sizes: [7, 8, 9, 10, 11, 12],
+    colors: ["#1a1a2e", "#f5f5f5", "#e94560"],
+    primaryImage: "https://images.unsplash.com/photo-1463100099107-aa0980c362e6?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=600&q=80",
+    rating: 4.5,
+    reviews: 445,
+    description: "The iconic sidestripe shoe gets a premium upgrade with suede-canvas uppers and padded collars.",
+    isNew: false,
+    isBestSeller: false,
+  },
+  {
+    id: "10",
+    name: "Chuck 70 High",
+    brand: "Converse",
+    price: 95,
+    originalPrice: 110,
+    category: "casual",
+    type: "newArrival",
+    sizes: [6, 7, 8, 9, 10, 11, 12],
+    colors: ["#1a1a2e", "#f5f5f5", "#e94560"],
+    primaryImage: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1494496195158-c3becb4f2475?w=600&q=80",
+    rating: 4.7,
+    reviews: 312,
+    description: "Heritage canvas meets premium craftsmanship with improved cushioning and vintage details.",
+    isNew: true,
+    isBestSeller: false,
+  },
+  {
+    id: "11",
+    name: "Gazelle Bold",
+    brand: "Adidas",
+    price: 109,
+    originalPrice: 130,
+    category: "casual",
+    type: "newArrival",
+    sizes: [6, 7, 8, 9, 10, 11],
+    colors: ["#533483", "#0f3460", "#f5f5f5"],
+    primaryImage: "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1603808033192-082d6919d3e1?w=600&q=80",
+    rating: 4.8,
+    reviews: 289,
+    description: "The Gazelle gets a bold platform makeover with rich suede upper and iconic T-toe design.",
+    isNew: true,
+    isBestSeller: false,
+  },
+  {
+    id: "12",
+    name: "Retro Runner Classic",
+    brand: "New Balance",
+    price: 129,
+    originalPrice: 155,
+    category: "casual",
+    type: "bestSeller",
+    sizes: [7, 8, 9, 10, 11, 12],
+    colors: ["#16213e", "#e94560", "#f5f5f5"],
+    primaryImage: "https://images.unsplash.com/photo-1552346154-21d32810aba3?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?w=600&q=80",
+    rating: 4.7,
+    reviews: 401,
+    description: "Retro vibes meet modern comfort with ENCAP midsole technology and premium suede/mesh upper.",
+    isNew: false,
+    isBestSeller: true,
+  },
+
+  // ==================== FORMAL ====================
+  {
+    id: "13",
+    name: "Oxford Classic Elite",
+    brand: "Cole Haan",
+    price: 249,
+    originalPrice: 310,
+    category: "formal",
+    type: "bestSeller",
+    sizes: [7, 8, 9, 10, 11, 12],
+    colors: ["#1a1a2e", "#3e2723", "#f5f5f5"],
+    primaryImage: "https://images.unsplash.com/photo-1614252369475-531eba835eb1?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=600&q=80",
+    rating: 4.8,
+    reviews: 201,
+    description: "Hand-stitched full grain leather oxford with Grand.OS comfort technology for all-day sophistication.",
+    isNew: false,
+    isBestSeller: true,
+  },
+  {
+    id: "14",
+    name: "Penny Loafer Supreme",
+    brand: "Clarks",
+    price: 189,
+    originalPrice: 240,
+    category: "formal",
+    type: "featured",
+    sizes: [7, 8, 9, 10, 11],
+    colors: ["#3e2723", "#1a1a2e"],
+    primaryImage: "https://images.unsplash.com/photo-1626379801357-1342a8e9a0b0?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=600&q=80",
+    rating: 4.6,
+    reviews: 145,
+    description: "Italian-inspired penny loafer crafted from buttery soft leather with cushioned OrthoLite footbed.",
+    isNew: false,
+    isBestSeller: false,
+  },
+  {
+    id: "15",
+    name: "Derby Gentleman",
+    brand: "Allen Edmonds",
+    price: 279,
+    originalPrice: 350,
+    category: "formal",
+    type: "newArrival",
+    sizes: [8, 9, 10, 11, 12],
+    colors: ["#1a1a2e", "#3e2723"],
+    primaryImage: "https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?w=600&q=80",
+    rating: 4.9,
+    reviews: 98,
+    description: "Benchmade in the USA with premium calfskin leather and Goodyear welt construction for decades of wear.",
+    isNew: true,
+    isBestSeller: false,
+  },
+  {
+    id: "16",
+    name: "Monk Strap Prestige",
+    brand: "Hugo Boss",
+    price: 299,
+    originalPrice: 380,
+    category: "formal",
+    type: "featured",
+    sizes: [7, 8, 9, 10, 11],
+    colors: ["#3e2723", "#1a1a2e"],
+    primaryImage: "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1605812860427-4024433a70fd?w=600&q=80",
+    rating: 4.7,
+    reviews: 76,
+    description: "Double monk strap in brushed leather with Blake-stitched construction and leather sole.",
+    isNew: false,
+    isBestSeller: false,
+  },
+
+  // ==================== SPORTS ====================
+  {
+    id: "17",
+    name: "LeBron XXI",
+    brand: "Nike",
+    price: 209,
+    originalPrice: 250,
+    category: "sports",
+    type: "bestSeller",
+    sizes: [8, 9, 10, 11, 12, 13],
+    colors: ["#e94560", "#1a1a2e", "#0f3460"],
+    primaryImage: "https://images.unsplash.com/photo-1556906781-9a412961c28c?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1579338559194-a162d19bf842?w=600&q=80",
+    rating: 4.8,
+    reviews: 356,
+    description: "Court-ready performance with Zoom Air cushioning and a lockdown fit engineered for explosive play.",
+    isNew: false,
+    isBestSeller: true,
+  },
+  {
+    id: "18",
+    name: "Harden Vol. 8",
+    brand: "Adidas",
+    price: 169,
+    originalPrice: 200,
+    category: "sports",
+    type: "newArrival",
+    sizes: [8, 9, 10, 11, 12],
+    colors: ["#0f3460", "#e94560", "#f5f5f5"],
+    primaryImage: "https://images.unsplash.com/photo-1605733513597-a8f8341084e6?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1581101767113-1677fc2beaa8?w=600&q=80",
+    rating: 4.6,
+    reviews: 198,
+    description: "Step-back ready with Lightstrike cushioning and a wide base for unshakeable stability.",
+    isNew: true,
+    isBestSeller: false,
+  },
+  {
+    id: "19",
+    name: "Metcon 9 Elite",
+    brand: "Nike",
+    price: 149,
+    originalPrice: 180,
+    category: "sports",
+    type: "featured",
+    sizes: [7, 8, 9, 10, 11, 12],
+    colors: ["#1a1a2e", "#e94560", "#16213e"],
+    primaryImage: "https://images.unsplash.com/photo-1597045566677-8cf032ed6634?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1562183241-b937e95585b6?w=600&q=80",
+    rating: 4.7,
+    reviews: 234,
+    description: "The ultimate training shoe. Stable for lifts, responsive for sprints, and durable for everything in between.",
+    isNew: false,
+    isBestSeller: false,
+  },
+  {
+    id: "20",
+    name: "Nano X4",
+    brand: "Reebok",
+    price: 139,
+    originalPrice: 165,
+    category: "sports",
+    type: "bestSeller",
+    sizes: [7, 8, 9, 10, 11],
+    colors: ["#1a1a2e", "#533483", "#e94560"],
+    primaryImage: "https://images.unsplash.com/photo-1623998022290-a74f8cc36563?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1606890658317-7d14490b76fd?w=600&q=80",
+    rating: 4.5,
+    reviews: 301,
+    description: "CrossFit-tested durability meets flex-engineered comfort for the most demanding WODs.",
+    isNew: false,
+    isBestSeller: true,
+  },
+  {
+    id: "21",
+    name: "Court Vision Mid",
+    brand: "Nike",
+    price: 109,
+    originalPrice: 130,
+    category: "sports",
+    type: "newArrival",
+    sizes: [7, 8, 9, 10, 11, 12],
+    colors: ["#f5f5f5", "#1a1a2e", "#e94560"],
+    primaryImage: "https://images.unsplash.com/photo-1612902456551-333ac5afa26e?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?w=600&q=80",
+    rating: 4.4,
+    reviews: 167,
+    description: "Mid-top basketball heritage silhouette with premium leather upper and visible Air unit.",
+    isNew: true,
+    isBestSeller: false,
+  },
+
+  // ==================== BOOTS ====================
+  {
+    id: "22",
+    name: "Chelsea Boot Noir",
+    brand: "Dr. Martens",
+    price: 199,
+    originalPrice: 250,
+    category: "boots",
+    type: "bestSeller",
+    sizes: [7, 8, 9, 10, 11, 12],
+    colors: ["#1a1a2e", "#3e2723"],
+    primaryImage: "https://images.unsplash.com/photo-1638247025967-b4e38f787b76?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1605812860427-4024433a70fd?w=600&q=80",
+    rating: 4.7,
+    reviews: 287,
+    description: "Iconic AirWair sole meets Chelsea boot elegance. Smooth polished leather with elastic side panels.",
+    isNew: false,
+    isBestSeller: true,
+  },
+  {
+    id: "23",
+    name: "Alpine Hiker Pro",
+    brand: "Timberland",
+    price: 229,
+    originalPrice: 280,
+    category: "boots",
+    type: "newArrival",
+    sizes: [8, 9, 10, 11, 12],
+    colors: ["#3e2723", "#1a1a2e", "#16213e"],
+    primaryImage: "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1542840410-3092f99611a3?w=600&q=80",
+    rating: 4.8,
+    reviews: 178,
+    description: "Waterproof premium full-grain leather with anti-fatigue technology for all-terrain confidence.",
+    isNew: true,
+    isBestSeller: false,
+  },
+  {
+    id: "24",
+    name: "1460 Smooth",
+    brand: "Dr. Martens",
+    price: 179,
+    originalPrice: 220,
+    category: "boots",
+    type: "bestSeller",
+    sizes: [6, 7, 8, 9, 10, 11, 12],
+    colors: ["#1a1a2e", "#e94560", "#3e2723"],
+    primaryImage: "https://images.unsplash.com/photo-1603808033192-082d6919d3e1?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=600&q=80",
+    rating: 4.9,
+    reviews: 534,
+    description: "The original 8-eye boot. Smooth leather, iconic yellow stitching, and the legendary AirWair bouncing sole.",
+    isNew: false,
+    isBestSeller: true,
+  },
+  {
+    id: "25",
+    name: "Euro Sprint Hiker",
+    brand: "Timberland",
+    price: 159,
+    originalPrice: 195,
+    category: "boots",
+    type: "featured",
+    sizes: [7, 8, 9, 10, 11],
+    colors: ["#3e2723", "#1a1a2e"],
+    primaryImage: "https://images.unsplash.com/photo-1542840410-3092f99611a3?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=600&q=80",
+    rating: 4.5,
+    reviews: 156,
+    description: "Lightweight hiker with ReBOTL recycled material lining and GreenStride comfort sole.",
+    isNew: false,
+    isBestSeller: false,
+  },
+
+  // ==================== MORE RUNNING ====================
+  {
+    id: "26",
+    name: "Invincible Run 3",
+    brand: "Nike",
+    price: 189,
+    originalPrice: 230,
+    category: "running",
+    type: "newArrival",
+    sizes: [7, 8, 9, 10, 11, 12],
+    colors: ["#e94560", "#0f3460", "#f5f5f5"],
+    primaryImage: "https://images.unsplash.com/photo-1584735175315-9d5df23860e6?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=600&q=80",
+    rating: 4.8,
+    reviews: 278,
+    description: "Maximum ZoomX foam from heel to toe for an impossibly soft and springy ride mile after mile.",
+    isNew: true,
+    isBestSeller: false,
+  },
+  {
+    id: "27",
+    name: "Solarglide 6",
+    brand: "Adidas",
+    price: 149,
+    originalPrice: 180,
+    category: "running",
+    type: "featured",
+    sizes: [7, 8, 9, 10, 11],
+    colors: ["#16213e", "#533483", "#f5f5f5"],
+    primaryImage: "https://images.unsplash.com/photo-1606890658317-7d14490b76fd?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=600&q=80",
+    rating: 4.5,
+    reviews: 189,
+    description: "LEP support system and Boost midsole combine stability with energy-returning bounce.",
+    isNew: false,
+    isBestSeller: false,
+  },
+
+  // ==================== MORE CASUAL ====================
+  {
+    id: "28",
+    name: "Dunk Low Retro",
+    brand: "Nike",
+    price: 119,
+    originalPrice: 140,
+    category: "casual",
+    type: "bestSeller",
+    sizes: [6, 7, 8, 9, 10, 11, 12],
+    colors: ["#1a1a2e", "#0f3460", "#e94560"],
+    primaryImage: "https://images.unsplash.com/photo-1597045566677-8cf032ed6634?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1556906781-9a412961c28c?w=600&q=80",
+    rating: 4.8,
+    reviews: 892,
+    description: "Born on the hardwood, adopted by the streets. Premium leather upper with padded low-cut collar.",
+    isNew: false,
+    isBestSeller: true,
+  },
+  {
+    id: "29",
+    name: "Forum Low",
+    brand: "Adidas",
+    price: 99,
+    originalPrice: 120,
+    category: "casual",
+    type: "newArrival",
+    sizes: [7, 8, 9, 10, 11],
+    colors: ["#f5f5f5", "#0f3460", "#e94560"],
+    primaryImage: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1612902456551-333ac5afa26e?w=600&q=80",
+    rating: 4.6,
+    reviews: 234,
+    description: "Heritage basketball style from '84 reborn with premium materials and the iconic ankle strap.",
+    isNew: true,
+    isBestSeller: false,
+  },
+
+  // ==================== MORE SPORTS ====================
+  {
+    id: "30",
+    name: "Curry Flow 11",
+    brand: "Under Armour",
+    price: 179,
+    originalPrice: 220,
+    category: "sports",
+    type: "newArrival",
+    sizes: [8, 9, 10, 11, 12, 13],
+    colors: ["#0f3460", "#e94560", "#f5f5f5"],
+    primaryImage: "https://images.unsplash.com/photo-1579338559194-a162d19bf842?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1556906781-9a412961c28c?w=600&q=80",
+    rating: 4.7,
+    reviews: 198,
+    description: "UA Flow outsole with no rubber for insane court feel and lightning-quick cuts.",
+    isNew: true,
+    isBestSeller: false,
+  },
+  {
+    id: "31",
+    name: "Predator Edge.1",
+    brand: "Adidas",
+    price: 189,
+    originalPrice: 240,
+    category: "sports",
+    type: "featured",
+    sizes: [7, 8, 9, 10, 11, 12],
+    colors: ["#e94560", "#1a1a2e", "#0f3460"],
+    primaryImage: "https://images.unsplash.com/photo-1581101767113-1677fc2beaa8?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1605733513597-a8f8341084e6?w=600&q=80",
+    rating: 4.6,
+    reviews: 145,
+    description: "Zone Skin technology for lethal spin and swerve. Dominate the pitch with precision control.",
+    isNew: false,
+    isBestSeller: false,
+  },
+
+  // ==================== MORE BOOTS ====================
+  {
+    id: "32",
+    name: "Moc Toe Heritage",
+    brand: "Red Wing",
+    price: 319,
+    originalPrice: 390,
+    category: "boots",
+    type: "bestSeller",
+    sizes: [8, 9, 10, 11, 12],
+    colors: ["#3e2723", "#1a1a2e"],
+    primaryImage: "https://images.unsplash.com/photo-1605812860427-4024433a70fd?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1638247025967-b4e38f787b76?w=600&q=80",
+    rating: 4.9,
+    reviews: 267,
+    description: "American-made heritage boot with Oro Legacy leather that develops rich patina with age.",
+    isNew: false,
+    isBestSeller: true,
+  },
+  {
+    id: "33",
+    name: "Blundstone Classic",
+    brand: "Blundstone",
+    price: 209,
+    originalPrice: 250,
+    category: "boots",
+    type: "featured",
+    sizes: [7, 8, 9, 10, 11, 12],
+    colors: ["#3e2723", "#1a1a2e", "#16213e"],
+    primaryImage: "https://images.unsplash.com/photo-1542840410-3092f99611a3?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=600&q=80",
+    rating: 4.7,
+    reviews: 389,
+    description: "Tasmanian craftsmanship since 1870. Premium leather, XRD comfort insole, TPU outsole for all conditions.",
+    isNew: false,
+    isBestSeller: false,
+  },
+
+  // ==================== ADDITIONAL CASUAL ====================
+  {
+    id: "34",
+    name: "Suede XL",
+    brand: "Puma",
+    price: 89,
+    originalPrice: 105,
+    category: "casual",
+    type: "featured",
+    sizes: [7, 8, 9, 10, 11],
+    colors: ["#16213e", "#e94560", "#f5f5f5"],
+    primaryImage: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1552346154-21d32810aba3?w=600&q=80",
+    rating: 4.4,
+    reviews: 345,
+    description: "Oversized proportions reimagine the classic Suede silhouette with a chunky midsole and bold presence.",
+    isNew: false,
+    isBestSeller: false,
+  },
+  {
+    id: "35",
+    name: "Era Stacked",
+    brand: "Vans",
+    price: 79,
+    originalPrice: 95,
+    category: "casual",
+    type: "newArrival",
+    sizes: [6, 7, 8, 9, 10, 11],
+    colors: ["#1a1a2e", "#f5f5f5"],
+    primaryImage: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1463100099107-aa0980c362e6?w=600&q=80",
+    rating: 4.3,
+    reviews: 198,
+    description: "The classic Era gets elevated with a platform sole while keeping its timeless skate DNA.",
+    isNew: true,
+    isBestSeller: false,
+  },
+
+  // ==================== ADDITIONAL FORMAL ====================
+  {
+    id: "36",
+    name: "Wingtip Brogue Elite",
+    brand: "Johnston & Murphy",
+    price: 219,
+    originalPrice: 280,
+    category: "formal",
+    type: "bestSeller",
+    sizes: [7, 8, 9, 10, 11, 12],
+    colors: ["#3e2723", "#1a1a2e"],
+    primaryImage: "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1614252369475-531eba835eb1?w=600&q=80",
+    rating: 4.7,
+    reviews: 156,
+    description: "Full brogue detailing on hand-burnished Italian calfskin with sheepskin-lined interior.",
+    isNew: false,
+    isBestSeller: true,
+  },
+  {
+    id: "37",
+    name: "Cap Toe Regent",
+    brand: "To Boot New York",
+    price: 349,
+    originalPrice: 425,
+    category: "formal",
+    type: "newArrival",
+    sizes: [8, 9, 10, 11, 12],
+    colors: ["#1a1a2e", "#3e2723"],
+    primaryImage: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1626379801357-1342a8e9a0b0?w=600&q=80",
+    rating: 4.9,
+    reviews: 87,
+    description: "Made in Italy cap-toe oxford in lustrous calfskin with Bologna-constructed sole for supreme flexibility.",
+    isNew: true,
+    isBestSeller: false,
+  },
+
+  // ==================== ADDITIONAL RUNNING ====================
+  {
+    id: "38",
+    name: "Ghost 16",
+    brand: "Brooks",
+    price: 139,
+    originalPrice: 165,
+    category: "running",
+    type: "bestSeller",
+    sizes: [7, 8, 9, 10, 11, 12, 13],
+    colors: ["#16213e", "#e94560", "#0f3460"],
+    primaryImage: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1539185441755-769473a23570?w=600&q=80",
+    rating: 4.7,
+    reviews: 445,
+    description: "Soft DNA LOFT cushioning and a smooth transition from landing to toe-off. A daily trainer you'll love.",
+    isNew: false,
+    isBestSeller: true,
+  },
+  {
+    id: "39",
+    name: "Speedgoat 5",
+    brand: "Hoka",
+    price: 159,
+    originalPrice: 195,
+    category: "running",
+    type: "newArrival",
+    sizes: [8, 9, 10, 11, 12],
+    colors: ["#533483", "#0f3460", "#e94560"],
+    primaryImage: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=600&q=80",
+    rating: 4.8,
+    reviews: 312,
+    description: "Maximum trail cushioning with aggressive Vibram Megagrip outsole for supreme off-road traction.",
+    isNew: true,
+    isBestSeller: false,
+  },
+  {
+    id: "40",
+    name: "Cloudmonster 2",
+    brand: "On",
+    price: 179,
+    originalPrice: 220,
+    category: "running",
+    type: "featured",
+    sizes: [7, 8, 9, 10, 11, 12],
+    colors: ["#0f3460", "#e94560", "#f5f5f5"],
+    primaryImage: "https://images.unsplash.com/photo-1606890658317-7d14490b76fd?w=600&q=80",
+    hoverImg: "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=600&q=80",
+    rating: 4.6,
+    reviews: 234,
+    description: "Monster-sized CloudTec cushioning pods deliver maximum energy return with a bold, head-turning aesthetic.",
+    isNew: false,
+    isBestSeller: false,
+  },
+];

@@ -1,5 +1,4 @@
-/*{
-    max-width: 100% !important;
-    box-sizing: border-box !important;
-    height: auto !important;
-}*/
+.App {
+    min-height: 100vh;
+    background: var(--bg-primary);
+}
